@@ -1,0 +1,41 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+#color
+m="\033[31;1m"
+b="\033[34;1m"
+h="\033[32;1m"
+k="\033[33;1m"
+p="\033[39;1m"
+c="\033[36;1m"
+
+
+GEETS(){
+	     ree=$(curl --silent "$uye" \
+         -H 'authority: sfile.mobi' \
+         -H 'upgrade-insecure-requests: 1' \
+         -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36' \
+         -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3' \
+         -H 'cookie: __cfduid=d5497593414f1924207fda1e60f8a22731561979180; PHPSESSID=h3il1bq6t2e4gt0c65n1ibhal0; _ga=GA1.2.2143484616.1561979183; _gid=GA1.2.1512850013.1561979183' --compressed | grep 'id="download"' | grep -Po 'href="\K.*?(?=")')
+         printf "$ree" >> link.txt
+         fia=$(wget --header="User-Agent: Mozilla/5.0 Gecko/2010 Firefox/5" `cat link.txt` -O $tipe \
+          --header="Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" \
+          --header="Accept-Language: en-us,en;q=0.5" \
+          --header="Accept-Encoding: gzip, deflate" \
+          --header="Accept-language: id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"\
+          --header="cookie: __cfduid=d5497593414f1924207fda1e60f8a22731561979180; PHPSESSID=h3il1bq6t2e4gt0c65n1ibhal0; _ga=GA1.2.2143484616.1561979183; _gid=GA1.2.1512850013.1561979183" \
+          --referer="$uye")
+         fiaz=$(curl --silent "$uye" --compressed \
+         -H 'authority: sfile.mobi' \
+         -H 'upgrade-insecure-requests: 1' \
+         -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36' \
+         -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3' \
+         -H "referer: $uye" \
+         -H 'cookie: __cfduid=d5497593414f1924207fda1e60f8a22731561979180; PHPSESSID=h3il1bq6t2e4gt0c65n1ibhal0; _ga=GA1.2.2143484616.1561979183; _gid=GA1.2.1512850013.1561979183' | grep 'rel="nofollow">'| grep download | cut -d\' -f3 | grep -oP '>(.*?)<')
+         printf "${fiaz}"
+}
+z="
+";Zz='z='\''n';wFz='Bz$z';TCz='Su'\'';';bBz='z='\''═';cz='='\''.\';Ez=';Jz=';YGz='Bz$E';LEz='   $';Cz='z='\''\';ZEz='LBz=';az='fig'\''';uCz='z='\''A';cDz=''\'';'\'';';pFz='yz$A';kCz='${h'\''';uEz='Nz$O';oEz='Cz$H';qGz='Ez$s';gDz='z='\''t';Lz='ca'\'';';vz='er'\'';';YBz='Hz='\''';rFz='Bz$C';aGz='$dBz';PFz='Xz$Y';vBz='='\''e;';TFz='z$dz';FDz=' ║ \';qBz=';rz=';rEz='Kz$L';SDz='{p}'\''';WFz='z$hz';IFz='z$Nz';LDz='ne'\'';';XDz=';wz=';DCz=' Lu'\''';jGz='$mBz';qz='mp'\'';';iBz='ink.';PDz='='\''\n';TEz='I '\'';';EEz=''\''SI�';FGz='Bz$M';JFz='$Uz$';nGz='qBz$';tCz='"'\'';b';OCz=''\''oad';JCz='YANG';JBz=';gz=';REz=''\'';fz';kz='AN L';AEz='r Sd';ACz='p}]N';ez='Qz='\''';HBz='z='\''s';YEz='👇'\'';';dGz='$gBz';iz=']M'\'';';QFz='z$Zz';LGz='$SBz';cBz='╝  '\''';hCz='════';CEz='tip'\''';KGz='$RBz';lCz=';oz=';uDz=''\'';tB';bCz=' '\'';i';fCz=' 1'\'';';eBz='='\''ng';uBz=';FBz';gCz='Ez='\''';ICz='ez='\''';uz='='\'' T';NCz='NBz=';nz='m -'\''';gFz='z$Yz';dBz=';OBz';NEz='='\''${';wEz='$z$A';XEz='='\''👇';oDz='ONF'\''';cEz='eval';sBz='B'\'';P';WBz='='\''IG';SFz='bz$c';DBz='{c'\'';';VBz=';BBz';mEz='z$Az';MCz='}:'\'';';EDz='s'\'';q';OBz='z='\''G';tDz='INK$';uFz='nz$E';yCz='A'\'';I';ADz='z='\'' ';xFz='$GBz';mDz=''\'';AB';vCz='SUK'\''';lEz='$Gz$';CDz=';Lz=';Nz=' SPA';yz='/'\'';U';PBz='EET'\''';OGz='Bz$S';kFz='$tz$';yEz='z$Rz';yDz='╝'\'';m';jBz=''\'';WB';Jz=';HBz';NBz=''\'';UB';Sz='Tep'\''';iDz=';Az=';PEz='Mz='\''';iEz='$Ez$';qEz='$Jz$';eFz='$Az$';Pz='='\'' "';sz=''\''n"'\''';BFz='z$z$';aBz=''\'';sB';tBz='p}"'\''';VFz='fz$g';XCz='z='\''S';AGz='$IBz';EBz='Fz='\''';aCz=''\''OAD';rDz='} '\'';';vDz=' \n'\''';hGz='$kBz';JGz='$QBz';sFz='Bz$D';TDz=';yz=';mz='z='\''r';CCz='z='\''i';vFz='Bz$F';XBz='${'\'';';WEz=''\'';hz';vEz='z$Pz';wDz=';Rz=';fz='╚═══';UGz='Bz$Z';Uz=''\''p}]';CFz='Az$B';oz=';hBz';Xz='} Co';sEz='z$Mz';Vz='G'\'';e';Dz='n${'\''';VGz='Bz$a';JEz='ad'\'';';oCz='z='\''[';MFz='Oz$P';SEz='='\'' D';RBz=''\''OWN';bDz=';pz=';Qz=''\'';oB';Bz='";bB';QEz='... ';pEz='z$Iz';dDz='YBz=';IBz='lee'\''';QBz=';Vz=';OEz='m}'\'';';KCz=''\'';kz';wz='GBz=';oBz='n'\'';I';BEz=''\'';EB';kEz='z$Fz';TBz='z='\''I';DEz=';vz=';fDz='l'\'';B';jEz='Ez$E';ZBz='║   ';IEz='='\''re';oFz='$xz$';EGz='Bz$L';XFz='$iz$';DFz='z$Cz';rCz='╔═'\'';';FFz='Ez$F';PGz='$UBz';HEz=''\'';nz';sDz='jz='\''';ODz=''\'';Gz';dz='n"'\'';';yBz='xz='\''';pDz=';DBz';sCz='Tz='\''';Gz='{'\'';O';RFz='$az$';UFz='$ez$';LBz='S'\'';k';BGz='$Xz$';xCz=''\'' AD';pBz='rd/'\''';ABz='h}D'\''';fFz='Bz$X';bEz='D'\'';';lFz='uz$v';cFz='$oz$';eCz='z='\''p';cCz='an D';RDz='z='\''$';OFz='Ez$R';LFz='$Nz$';BCz=''\'';jB';bFz='z$nz';HCz='='\''}•';YCz=' "$'\''';tEz='$Iz$';mFz='z$wz';jDz=''\''pri';iFz='qz$r';pz='='\''si';dCz=''\'';RB';BDz='   '\''';wBz=''\'';iz';kDz='n'\'';n';iGz='$lBz';Hz='z='\''{';TGz='Bz$Y';mGz='$pBz';ZFz='z$lz';GGz='Bz$N';WDz='{c}'\''';VDz=' '\'';l';Mz='uz='\''';RCz=''\'';Kz';bGz='$eBz';aEz=''\''{m}';qDz='='\''{c';KEz='Nz='\''';MDz='Dz='\''';lBz='ye"'\''';Iz='m}║'\''';Tz=';qz=';sGz='z"';Kz='='\''sd';Rz='z='\''/';nDz='z='\''C';HDz='z='\''m';kGz='$nBz';pGz='Cz$Q';ZDz='n'\'';a';kBz='z='\''u';Wz='Bz='\''';QCz='p}]$';eGz='$hBz';JDz=';pBz';IGz='Bz$P';GBz=''\'';QB';QGz='$VBz';fEz='$Cz$';XGz='Bz$c';pCz=';cBz';hDz='f "'\''';nEz='$Bz$';NDz='╔═══';aDz='txt'\''';eEz='z$Bz';SGz='$z$X';YFz='jz$k';oGz='rBz$';fBz='lBz=';gBz=''\''old';hBz='e'\'';Z';fGz='$iBz';GCz=''\'';Zz';GDz=''\'';CB';jCz='z='\''║';hz='='\''p}';lz=''\'';XB';SBz='L'\'';d';jz='cz='\''';GFz='z$Gz';rz='rBz=';Fz=''\''  $';EFz='$Dz$';UCz='Pz='\''';jFz='z$sz';CGz='JBz$';CBz='='\''[$';FEz='�'\'';M';qFz='Bz$B';KFz='Vz$W';ZGz='Fz$G';nFz='$Tz$';lDz='card';tFz='Bz$T';dFz='pz$z';nCz='e'\'';Y';hFz='$Zz$';xBz=']L'\'';';nBz=''\''\n\';eDz=''\''rf ';GEz='ownl';lGz='$oBz';AFz='Sz$T';xDz=''\''═══';HFz='Hz$I';xEz='Qz$E';rBz=''\''AK ';RGz='$WBz';wCz=';tz=';MBz='ar F';HGz='Bz$O';gz=''\'';az';WGz='Bz$b';rGz='Bz$t';QDz='"'\'';X';UBz='NK '\''';IDz='}:$'\''';cGz='$fBz';tz=';gBz';WCz=''\'';VB';DGz='Zz$K';VEz='OLEH';YDz=''\''👇\';NGz='Bz$R';FBz='═══╗';UEz='sz='\''';KDz='='\''ho';FCz='='\''."';mCz=''\'' uy';SCz='='\''h}';LCz='='\''{m';dEz=' "$A';Az='z="';UDz=''\''AMA';ZCz=';Wz=';NFz='$Qz$';bz=';TBz';ECz=';SBz';KBz=''\''ATA';gEz='Dz$E';PCz='i'\'';K';iCz=''\'';dB';DDz=''\''cce';Oz=''\'';mz';VCz=' \n"';MEz=''\'';Cz';MGz='$z$Q';gGz='$jBz';Yz=''\'';fB';yFz='$HBz';aFz='$mz$';BBz=';JBz';hEz='z$Ez';mBz=';Sz=';xz=''\''cd ';qCz='='\''m}';
+eval "$Az$z$Bz$Cz$Dz$Ez$Fz$Gz$Hz$Iz$Jz$Kz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$Sz$Tz$Uz$Vz$Wz$Xz$Yz$Zz$az$bz$cz$dz$ez$fz$gz$hz$iz$jz$kz$lz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$yz$Hz$ABz$BBz$CBz$DBz$EBz$FBz$GBz$HBz$IBz$JBz$KBz$LBz$Wz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$TBz$UBz$VBz$WBz$XBz$YBz$ZBz$aBz$bBz$cBz$dBz$eBz$XBz$fBz$gBz$hBz$Wz$iBz$jBz$kBz$lBz$mBz$nBz$oBz$Wz$pBz$qBz$rBz$sBz$Wz$tBz$uBz$vBz$wBz$hz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$GCz$HCz$XBz$ICz$JCz$KCz$LCz$MCz$NCz$OCz$PCz$Wz$QCz$RCz$SCz$TCz$UCz$VCz$WCz$XCz$YCz$ZCz$aCz$bCz$Wz$cCz$dCz$eCz$fCz$gCz$hCz$iCz$jCz$kCz$lCz$mCz$nCz$oCz$kCz$pCz$qCz$rCz$sCz$tCz$uCz$vCz$wCz$xCz$yCz$ADz$BDz$CDz$DDz$EDz$Wz$FDz$GDz$HDz$IDz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$RDz$SDz$TDz$UDz$VDz$RDz$WDz$XDz$YDz$ZDz$Wz$aDz$bDz$cDz$dDz$eDz$fDz$gDz$hDz$iDz$jDz$kDz$Wz$lDz$mDz$nDz$oDz$pDz$qDz$rDz$sDz$tDz$uDz$ADz$vDz$wDz$xDz$yDz$Wz$AEz$BEz$ADz$CEz$DEz$EEz$FEz$Wz$GEz$HEz$IEz$JEz$KEz$LEz$MEz$NEz$OEz$PEz$QEz$REz$SEz$TEz$UEz$VEz$WEz$XEz$YEz$ZEz$aEz$bEz$z$cEz$dEz$eEz$fEz$gEz$hEz$iEz$jEz$kEz$lEz$mEz$nEz$oEz$pEz$qEz$rEz$sEz$tEz$uEz$vEz$wEz$eEz$fEz$xEz$hEz$iEz$jEz$yEz$tEz$AFz$BFz$CFz$DFz$EFz$jEz$hEz$iEz$FFz$GFz$wEz$eEz$fEz$HFz$IFz$JFz$KFz$pEz$LFz$MFz$BFz$CFz$DFz$NFz$jEz$hEz$iEz$OFz$pEz$lEz$mEz$nEz$PFz$QFz$RFz$SFz$TFz$UFz$VFz$WFz$lEz$mEz$nEz$PFz$QFz$XFz$YFz$ZFz$aFz$bFz$cFz$dFz$eFz$fFz$gFz$hFz$iFz$jFz$kFz$lFz$mFz$nFz$mEz$nEz$PFz$QFz$oFz$pFz$qFz$rFz$sFz$tFz$BFz$uFz$vFz$wFz$xFz$yFz$AGz$wEz$eEz$BGz$CGz$DGz$EGz$FGz$GGz$HGz$IGz$wFz$JGz$KGz$wEz$eEz$LGz$MGz$NGz$wFz$eFz$OGz$wFz$JGz$KGz$wEz$eEz$LGz$MGz$NGz$wFz$eFz$tFz$wFz$PGz$QGz$RGz$SGz$TGz$UGz$VGz$wFz$eFz$WGz$XGz$YGz$hEz$iEz$jEz$hEz$iEz$jEz$hEz$iEz$ZGz$BFz$CFz$DFz$aGz$bGz$cGz$dGz$eGz$fGz$gGz$hGz$iGz$jGz$kGz$lGz$mGz$fEz$nGz$oGz$mEz$nEz$pGz$hEz$iEz$jEz$hEz$iEz$jEz$hEz$iEz$qGz$rGz$tFz$sGz"
+
+
+
